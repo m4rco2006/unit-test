@@ -27,7 +27,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.m2/repository  # Cache Maven's local repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('/pom.xml') }}  # Cache key is based on the pom.xml files
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}  # Cache key is based on the pom.xml files
           restore-keys: |
             ${{ runner.os }}-maven-
 
