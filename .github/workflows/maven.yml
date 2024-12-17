@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: linux-latest  # The operating system for the runner
+    runs-on: ubuntu-latest  # The operating system for the runner
     
     steps:
       # Step 1: Check out the repository
