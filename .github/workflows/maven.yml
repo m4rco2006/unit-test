@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '21'
-          distribution: 'openjdk'  # You can change this to any distribution you prefer
+          distribution: 'temurin'  # You can change this to any distribution you prefer
 
       # Step 3: Cache Maven dependencies to speed up builds (optional)
       - name: Cache Maven dependencies
